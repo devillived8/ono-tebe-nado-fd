@@ -54,7 +54,7 @@
   padding-bottom: 6px;
 }
 
-.header_contacts--text-underline {
+.header__contacts--text-underline {
   text-decoration: underline;
   text-underline-offset: 5px;
 }
@@ -148,7 +148,7 @@
 .description__button {
   width: 256px;
   height: 51px;
-  background-color: #ffffff00;
+  background-color: transparent;
   border: 1px solid #fff;
   font-family: Raleway, sans-serif;
   font-size: 22px;
