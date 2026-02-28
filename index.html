@@ -13,14 +13,14 @@
     <header class="header">
       <nav>
         <ul class="header__list">
-          <li class="header__link link--active">
-            <a href="#">главная</a>
+          <li class="header__list-element">
+            <a class="link link--active" href="#">главная</a>
           </li>
-          <li class="header__link">
-            <a href="#lots">посмотреть лоты</a>
+          <li class="header__list-element header__list-element--mark">
+            <a class="link" href="#lots">посмотреть лоты</a>
           </li>
-          <li class="header__link">
-            <a href="#about">об аукционе</a>
+          <li class="header__list-element header__list-element--mark">
+            <a class="link" href="#about">об аукционе</a>
           </li>
         </ul>
       </nav>
@@ -31,9 +31,9 @@
           alt="Логотип шапки"
         />
       </a>
-      <address class="header__contacts">
-        <a class="contacts-links" href="tel:+99995555555">+9 999 555 5555</a>
-        <a class="contacts-links" href="mailto:info@sobaka.ge"
+      <address class="contacts contacts--header">
+        <a class="contacts__links" href="tel:+99995555555">+9 999 555 5555</a>
+        <a class="contacts__links" href="mailto:info@sobaka.ge"
           >info@sobaka.ge</a
         >
         <p>наб. Принсенграхт 263- 265, Амстердам</p>
@@ -43,13 +43,13 @@
       <!-- Секция cover -->
       <section class="cover">
         <div class="overlay"></div>
-        <h1 class="cover__title">
+        <h1 class="cover__title title">
           <span class="align-start">оно</span>
-          <span class="align-center">тебе</span>
-          <span class="align-end">надо</span>
+          <span class="align-center spacing-top--20">тебе</span>
+          <span class="align-end spacing-top--20">надо</span>
         </h1>
         <div class="description">
-          <h2 class="description__title">
+          <h2 class="description__subtitle">
             Аукцион вещей, в которые никто не верил
           </h2>
           <button class="description__button">Сделать ставку</button>
@@ -58,14 +58,14 @@
       <!-- Конец секции cover -->
       <!-- Секция лоты -->
       <section id="lots" class="lots">
-        <h2 class="lots__title">Лоты</h2>
+        <h2 class="lots__title title">Лоты</h2>
         <ul class="lots__list">
           <!-- Первая карточка -->
-          <li class="lots__list-element lots__list-element--first">
+          <li class="lots__list-element lots__list-element--film">
             <a class="lots__list-link" href="/">
               <article class="lots__card">
                 <div class="overlay"></div>
-                <h3 class="lots__list-element-title">
+                <h3 class="lots__list-element-title title">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
                 <p class="lots__list-element-description">
@@ -78,11 +78,11 @@
           </li>
           <!-- Конец первой карточки -->
           <!-- Вторая карточка -->
-          <li class="lots__list-element lots__list-element--second">
+          <li class="lots__list-element lots__list-element--book">
             <a class="lots__list-link" href="/">
               <article class="lots__card">
                 <div class="overlay"></div>
-                <h3 class="lots__list-element-title">
+                <h3 class="lots__list-element-title title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
                 <p class="lots__list-element-description">
@@ -98,11 +98,11 @@
           </li>
           <!-- Конец второй карточки -->
           <!-- Третья карточка -->
-          <li class="lots__list-element lots__list-element--third">
+          <li class="lots__list-element lots__list-element--picture">
             <a class="lots__list-link" href="/">
               <article class="lots__card">
                 <div class="overlay"></div>
-                <h3 class="lots__list-element-title">
+                <h3 class="lots__list-element-title title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
                 <p class="lots__list-element-description">
@@ -152,37 +152,41 @@
       <!-- Конец секции об аукционе -->
     </main>
     <footer class="footer">
-      <address class="footer__contact">
-        <a class="contacts-links" href="tel:+99995555555">+9 999 555 5555</a>
-        <a class="contacts-links" href="mailto:info@sobaka.ge"
+      <address class="contacts contacts--footer">
+        <a class="contacts__links" href="tel:+99995555555">+9 999 555 5555</a>
+        <a class="contacts__links" href="mailto:info@sobaka.ge"
           >info@sobaka.ge</a
         >
         <p>наб. Принсенграхт 263-265, Амстердам</p>
       </address>
       <nav class="footer__nav">
-        <ul class="footer__nav-ul">
-          <li class="footer__link link--active">
-            <a href="#">главная</a>
+        <ul class="footer__list">
+          <li>
+            <a class="link link--active" href="#">главная</a>
           </li>
-          <li class="footer__link">
-            <a href="#lots">посмотреть лоты</a>
+          <li>
+            <a class="link" href="#lots">посмотреть лоты</a>
           </li>
-          <li class="footer__link">
-            <a href="#about">об аукционе</a>
+          <li>
+            <a class="link" href="#about">об аукционе</a>
           </li>
         </ul>
       </nav>
       <ul class="footer__networks">
-        <li class="networks__element">
-          <a href="#"><img src="./images/yt.svg" alt="Иконка ютуба" /></a>
-        </li>
-        <li class="networks__element">
-          <a href="#"><img src="./images/vk.svg" alt="Иконка ВКонтакте" /></a>
-        </li>
-        <li class="networks__element">
-          <a href="#"
-            ><img src="./images/pinterest.svg" alt="Иконка pinterest"
+        <li class="footer__networks-element">
+          <a href="/" aria-label="YouTube"
+            ><img src="./images/yt.svg" alt="Иконка ютуба"
           /></a>
+        </li>
+        <li class="footer__networks-element">
+          <a href="/" aria-label="Vk">
+            <img src="./images/vk.svg" alt="Иконка ВКонтакте" />
+          </a>
+        </li>
+        <li class="footer__networks-element">
+          <a href="/" aria-label="Pinterest">
+            <img src="./images/pinterest.svg" alt="Иконка pinterest" />
+          </a>
         </li>
       </ul>
     </footer>
